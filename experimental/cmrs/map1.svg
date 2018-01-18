@@ -16,7 +16,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
-   sodipodi:docname="Touch Panel Map 1 v2.svg">
+   sodipodi:docname="map1.svg">
   <defs
      id="defs2">
     <linearGradient
@@ -34,21 +34,21 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient80983"
-       id="linearGradient80985"
+       id="linearGradient5668"
+       gradientUnits="userSpaceOnUse"
        x1="310"
        y1="290"
        x2="340"
-       y2="320"
-       gradientUnits="userSpaceOnUse" />
+       y2="320" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient80983"
-       id="linearGradient80985-4"
+       id="linearGradient5670"
+       gradientUnits="userSpaceOnUse"
        x1="310"
        y1="290"
        x2="340"
-       y2="320"
-       gradientUnits="userSpaceOnUse" />
+       y2="320" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -57,11 +57,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.71614583"
-     inkscape:cx="960"
-     inkscape:cy="540"
+     inkscape:zoom="1.0127831"
+     inkscape:cx="517.65457"
+     inkscape:cy="547.89903"
      inkscape:document-units="px"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="layer7"
      showgrid="true"
      units="px"
      inkscape:window-width="1858"
@@ -98,7 +98,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -587,11 +587,11 @@
      inkscape:groupmode="layer"
      id="layer8"
      inkscape:label="Normal"
-     style="display:inline"
-     sodipodi:insensitive="true">
+     style="display:inline">
     <g
-       id="N200"
-       inkscape:label="N200">
+       id="Right-N"
+       inkscape:label="Right-N"
+       transform="translate(-200,250)">
       <path
          style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#012401;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:10;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
          d="m 300,280 50,50"
@@ -616,53 +616,53 @@
     <use
        x="0"
        y="0"
-       xlink:href="#N200"
-       id="N208"
+       xlink:href="#Right-N"
+       id="TN208"
        width="100%"
        height="100%"
-       transform="translate(300)"
-       inkscape:label="N208" />
+       transform="translate(500,-250)"
+       inkscape:label="TN208" />
     <use
        x="0"
        y="0"
-       xlink:href="#N200"
-       id="N250"
+       xlink:href="#Right-N"
+       id="TN250"
        width="100%"
        height="100%"
-       transform="translate(1050)"
-       inkscape:label="N250" />
+       transform="translate(1250,-250)"
+       inkscape:label="TN250" />
     <use
        x="0"
        y="0"
-       xlink:href="#N200"
-       id="N256"
+       xlink:href="#Right-N"
+       id="TN256"
        width="100%"
        height="100%"
-       transform="translate(1350)"
-       inkscape:label="N256" />
+       transform="translate(1550,-250)"
+       inkscape:label="TN256" />
     <use
        x="0"
        y="0"
-       xlink:href="#N200"
-       id="N304"
+       xlink:href="#Right-N"
+       id="TN304"
        width="100%"
        height="100%"
-       transform="translate(350,500)"
-       inkscape:label="N304" />
+       transform="translate(550,250)"
+       inkscape:label="TN304" />
     <use
        x="0"
        y="0"
-       xlink:href="#N200"
-       id="N352"
+       xlink:href="#Right-N"
+       id="TN352"
        width="100%"
        height="100%"
-       transform="translate(1200,500)"
-       inkscape:label="N352" />
+       transform="translate(1400,250)"
+       inkscape:label="TN352" />
     <g
-       transform="translate(200,3.9059328e-6)"
+       transform="translate(0,250)"
        style="display:inline"
-       id="N204"
-       inkscape:label="N204">
+       id="Left-N"
+       inkscape:label="Left-N">
       <path
          style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#012401;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:10;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
          d="m 350,280 -50,50"
@@ -687,39 +687,57 @@
     <use
        x="0"
        y="0"
-       xlink:href="#N204"
-       id="N210"
+       xlink:href="#Left-N"
+       id="TN210"
        width="100%"
        height="100%"
-       transform="translate(200,-3.9059328e-6)"
-       inkscape:label="N210" />
+       transform="translate(400,-250)"
+       inkscape:label="TN210" />
     <use
        x="0"
        y="0"
-       xlink:href="#N204"
-       id="N254"
+       xlink:href="#Left-N"
+       id="TN254"
        width="100%"
        height="100%"
-       transform="translate(1050,-3.9059328e-6)"
-       inkscape:label="N254" />
+       transform="translate(1250,-250)"
+       inkscape:label="TN254" />
     <use
        x="0"
        y="0"
-       xlink:href="#N204"
-       id="N300"
+       xlink:href="#Left-N"
+       id="TN300"
        width="100%"
        height="100%"
-       transform="translate(-100,500)"
-       inkscape:label="N300" />
+       transform="translate(100,250)"
+       inkscape:label="TN300" />
     <use
        x="0"
        y="0"
-       xlink:href="#N204"
-       id="N356"
+       xlink:href="#Left-N"
+       id="TN356"
        width="100%"
        height="100%"
-       transform="translate(1100,500)"
-       inkscape:label="N356" />
+       transform="translate(1300,250)"
+       inkscape:label="TN356" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#Right-N"
+       id="TN200"
+       width="100%"
+       height="100%"
+       transform="translate(200,-250)"
+       inkscape:label="TN200" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#Left-N"
+       id="TN204"
+       width="100%"
+       height="100%"
+       transform="translate(200,-250)"
+       inkscape:label="TN204" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -752,7 +770,8 @@
      inkscape:groupmode="layer"
      id="layer9"
      inkscape:label="Names (unused)"
-     style="display:none">
+     style="display:none"
+     sodipodi:insensitive="true">
     <text
        xml:space="preserve"
        style="color:#000000;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.33333397px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:0.99497483;fill-rule:nonzero;stroke:none;stroke-width:10;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
@@ -882,7 +901,8 @@
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="Names"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <text
        xml:space="preserve"
        style="color:#000000;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.33333397px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:0.99497483;fill-rule:nonzero;stroke:none;stroke-width:10;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
@@ -1492,10 +1512,12 @@
      style="display:inline"
      sodipodi:insensitive="true">
     <g
-       id="R200"
-       inkscape:label="R200"
+       id="Right-R"
+       inkscape:label="Right-R"
        inkscape:transform-center-x="247.11497"
-       inkscape:transform-center-y="-1.3882863">
+       inkscape:transform-center-y="-1.3882863"
+       transform="translate(-200,200)"
+       style="display:inline">
       <path
          inkscape:connector-curvature="0"
          id="path80952"
@@ -1512,66 +1534,66 @@
          inkscape:connector-curvature="0"
          id="path80950"
          d="m 290,280 h 10 l 20,20 30,30 h 10"
-         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:url(#linearGradient80985);stroke-width:15;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:url(#linearGradient5670);stroke-width:15;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
     </g>
     <use
        x="0"
        y="0"
-       xlink:href="#R200"
-       id="R208"
+       xlink:href="#Right-R"
+       id="TR208"
        width="100%"
        height="100%"
-       transform="translate(300)"
-       inkscape:label="R208" />
+       transform="translate(500,-200)"
+       inkscape:label="TR208" />
     <use
        x="0"
        y="0"
-       xlink:href="#R200"
+       xlink:href="#Right-R"
        inkscape:transform-center-x="247.11497"
        inkscape:transform-center-y="-1.3882863"
-       id="R250"
+       id="TR250"
        width="100%"
        height="100%"
-       transform="translate(1050)"
-       inkscape:label="R250" />
+       transform="translate(1250,-200)"
+       inkscape:label="TR250" />
     <use
        x="0"
        y="0"
-       xlink:href="#R200"
+       xlink:href="#Right-R"
        inkscape:transform-center-x="247.11497"
        inkscape:transform-center-y="-1.3882863"
-       id="R256"
+       id="TR256"
        width="100%"
        height="100%"
-       transform="translate(1350)"
-       inkscape:label="R256" />
+       transform="translate(1550,-200)"
+       inkscape:label="TR256" />
     <use
        x="0"
        y="0"
-       xlink:href="#R200"
+       xlink:href="#Right-R"
        inkscape:transform-center-x="247.11497"
        inkscape:transform-center-y="-1.3882863"
-       id="R304"
+       id="TR304"
        width="100%"
        height="100%"
-       transform="translate(350,500)"
-       inkscape:label="R304" />
+       transform="translate(550,300)"
+       inkscape:label="TR304" />
     <use
        x="0"
        y="0"
-       xlink:href="#R200"
+       xlink:href="#Right-R"
        inkscape:transform-center-x="247.11497"
        inkscape:transform-center-y="-1.3882863"
-       id="R352"
+       id="TR352"
        width="100%"
        height="100%"
-       transform="translate(1200,500)"
-       inkscape:label="R352" />
+       transform="translate(1400,300)"
+       inkscape:label="TR352" />
     <g
-       transform="matrix(-1,0,0,1,850,0)"
+       transform="matrix(-1,0,0,1,650,200)"
        style="display:inline"
-       id="R204"
-       inkscape:label="R204"
+       id="Left-R"
+       inkscape:label="Left-R"
        inkscape:transform-center-x="-247.11497"
        inkscape:transform-center-y="-1.3882863">
       <path
@@ -1590,51 +1612,73 @@
          inkscape:connector-curvature="0"
          id="path80950-1"
          d="m 290,280 h 10 l 20,20 30,30 h 10"
-         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:url(#linearGradient80985-4);stroke-width:15;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:url(#linearGradient5668);stroke-width:15;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
     </g>
     <use
        x="0"
        y="0"
-       xlink:href="#R204"
+       xlink:href="#Left-R"
        inkscape:transform-center-x="-247.11497"
        inkscape:transform-center-y="-1.3882863"
-       id="R210"
+       id="TR210"
        width="100%"
        height="100%"
-       transform="translate(200)"
-       inkscape:label="R210" />
+       transform="translate(400,-200)"
+       inkscape:label="TR210" />
     <use
        x="0"
        y="0"
-       xlink:href="#R204"
+       xlink:href="#Left-R"
        inkscape:transform-center-x="-247.11497"
        inkscape:transform-center-y="-1.3882863"
-       id="R254"
+       id="TR254"
        width="100%"
        height="100%"
-       transform="translate(1050)"
-       inkscape:label="R254" />
+       transform="translate(1250,-200)"
+       inkscape:label="TR254" />
     <use
        x="0"
        y="0"
-       xlink:href="#R204"
+       xlink:href="#Left-R"
        inkscape:transform-center-x="-247.11497"
        inkscape:transform-center-y="-1.3882863"
-       id="R356"
+       id="TR356"
        width="100%"
        height="100%"
-       transform="translate(1100,500)"
-       inkscape:label="R356" />
+       transform="translate(1300,300)"
+       inkscape:label="TR356" />
     <use
        x="0"
        y="0"
-       xlink:href="#R204"
+       xlink:href="#Left-R"
        inkscape:transform-center-x="-247.11497"
        inkscape:transform-center-y="-1.3882863"
-       id="R300"
+       id="TR300"
        width="100%"
        height="100%"
-       transform="translate(-100,500)"
-       inkscape:label="R300" />
+       transform="translate(100,300)"
+       inkscape:label="TR300" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#Right-R"
+       inkscape:transform-center-x="247.11497"
+       inkscape:transform-center-y="-1.3882863"
+       id="TR200"
+       width="100%"
+       height="100%"
+       transform="translate(200,-200)"
+       inkscape:label="TR200" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#Left-R"
+       inkscape:transform-center-x="-247.11497"
+       inkscape:transform-center-y="-1.3882863"
+       id="TR204"
+       width="100%"
+       height="100%"
+       transform="translate(200,-200)"
+       inkscape:label="TR204" />
   </g>
 </svg>
