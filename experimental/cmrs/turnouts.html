@@ -53,15 +53,44 @@ var jmriUrl = "http://localhost:12080/json/";
 var svgDoc;
 var jmri;
 
+function loadSvg() {
+    console.log( "document loaded" );
+    $("#svg_container").hide();
+    svgDoc = SVG("svg_container");
+    $.get(svgUrl, function(contents) {
+        var _tmp = $("svg", contents);
+
+        svgDoc.attr('viewBox',  _tmp.attr('viewBox'));
+        svgDoc.attr('width',    _tmp.attr('width'));
+        svgDoc.attr('height',   _tmp.attr('height'));
+
+        svgDoc.svg(_tmp.html());
+
+        console.log( "SVG loaded" );
+
+        $("#svg_container").fadeIn();
+        $("#loader").fadeOut();
+
+        $("[id^='TN']").hide();
+        $("[id^='TR']").hide();
+
+        setupJmri();
+    }, "xml");
+}
+
 function setupJmri() {
     jmri = $.JMRI(jmriUrl, {
         open : function() { console.log("JMRI: open "); },
         close: function() { console.log("JMRI: close"); },
+        console: function(data) { console.log("JMRI: " + data); },
+        goodbye : function() { console.log("JMRI: goodbye "); },
+        didReconnect : function() { console.log("JMRI: didReconnect "); },
+        failedReconnect  : function() { console.log("JMRI: failedReconnect  "); },
 
         hello : function() {
             console.log("JMRI: hello");
 
-            svgDoc.select('[id^="N"]').each(function () {
+            svgDoc.select("[id^='TN']").each(function () {
                 setupTurnout(this);
             });
         },
@@ -69,48 +98,18 @@ function setupJmri() {
         turnout: function (name, state, data) {
             console.log("Got turnout \"" + name + "\" with state " + state + ".");
 
-            var idNormal = name.substring(1);
-            var idThrown = "R" + idNormal.substring(1);
-            var isClosed = state === jmri.CLOSED;
+            var idNormal = "TN" + name.substring(2);
+            var idThrown = "TR" + name.substring(2);
 
-            $("#" + idNormal).fadeTo(250, isClosed ? 1 : 0);
-            $("#" + idThrown).fadeTo(250, isClosed ? 0 : 1);
-
-            //svgDoc.select("#" + idNormal).each(function() { this.style("opacity", isClosed ? "1" : "0"); });
-            //svgDoc.select("#" + idThrown).each(function() { this.style("opacity", isClosed ? "0" : "1"); })
-        },
-        console: function(data) { console.log("JMRI: " + data); },
-        goodbye : function() { console.log("JMRI: goodbye "); },
-        didReconnect : function() { console.log("JMRI: didReconnect "); },
-        failedReconnect  : function() { console.log("JMRI: failedReconnect  "); }
+            $("#" + idNormal).fadeTo(250, (state === jmri.CLOSED) ? 1 : 0);
+            $("#" + idThrown).fadeTo(250, (state === jmri.THROWN) ? 1 : 0);
+        }
     })
     jmri.connect();
 }
 
-function loadSvg() {
-    console.log( "document loaded" );
-    $("#svg_container").hide();
-    svgDoc = SVG("svg_container");
-    $.get(svgUrl, function(contents) {
-        var _tmp = $("svg", contents);
-        
-        svgDoc.attr('viewBox',  _tmp.attr('viewBox'));
-        svgDoc.attr('width',    _tmp.attr('width'));
-        svgDoc.attr('height',   _tmp.attr('height'));
-
-        svgDoc.svg(_tmp.html());
-        
-        console.log( "SVG loaded" );
-
-        $("#svg_container").fadeIn();
-        $("#loader").fadeOut();
-
-        setupJmri();
-    }, "xml");
-}
-
 function setupTurnout(t) {
-    var tid = t.attr("id").substring(1);
+    var tid = t.attr("id").substring(2);
     var jmriName = "NT" + tid;
 
     console.log("Setup turnout: " + jmriName);
