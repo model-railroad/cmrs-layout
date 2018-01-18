@@ -90,7 +90,7 @@ function setupJmri() {
         hello : function() {
             console.log("JMRI: hello");
 
-            svgDoc.select("[id^='TN']").each(function () {
+            svgDoc.select("[id^='Touch']").each(function () {
                 setupTurnout(this);
             });
         },
@@ -98,35 +98,41 @@ function setupJmri() {
         turnout: function (name, state, data) {
             console.log("Got turnout \"" + name + "\" with state " + state + ".");
 
-            var idNormal = "TN" + name.substring(2);
-            var idThrown = "TR" + name.substring(2);
+            var tid = name.substring(2);
+            var idNormal = "TN" + tid;
+            var idThrown = "TR" + tid;
 
             $("#" + idNormal).fadeTo(250, (state === jmri.CLOSED) ? 1 : 0);
             $("#" + idThrown).fadeTo(250, (state === jmri.THROWN) ? 1 : 0);
+
+            svgDoc.select("[id=Touch" + tid + "]").each( function() {
+                this._state = state;
+            });
         }
     })
     jmri.connect();
 }
 
 function setupTurnout(t) {
-    var tid = t.attr("id").substring(2);
+    var tid = t.attr("id").substring("Touch".length);
     var jmriName = "NT" + tid;
 
     console.log("Setup turnout: " + jmriName);
 
     jmri.getTurnout(jmriName);
 
-/*    console.log(tid) ;
+    t._state = 0;
     t.style("visibility", "visible");
     t.style("opacity", "0");
-    t._op = 0;
     t.click(function() {
-        console.log( tid + " " + t._op );
+        console.log( t + " " + t._state );
         t.animate(125, "<>", 0).style("opacity", "1").animate(125, "<>", 0).style("opacity", "0");
-        t._op = 1 - t._op;
-        jmri.setTurnout(jmriName, (t._op == 0) ? jmri.CLOSED : jmri.THROWN);
+        if (t._state == jmri.CLOSED) {
+            jmri.setTurnout(jmriName, jmri.THROWN);
+        } else if (t._state == jmri.THROWN) {
+            jmri.setTurnout(jmriName, jmri.CLOSED);
+        }
     });
-    */
 }
 
 

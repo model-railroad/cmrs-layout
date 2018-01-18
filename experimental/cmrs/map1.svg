@@ -57,11 +57,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7953125"
-     inkscape:cx="897.13163"
+     inkscape:zoom="0.7703125"
+     inkscape:cx="960"
      inkscape:cy="540"
      inkscape:document-units="px"
-     inkscape:current-layer="layer10"
+     inkscape:current-layer="layer11"
      showgrid="true"
      units="px"
      inkscape:window-width="1920"
@@ -1760,5 +1760,217 @@
        y="470"
        ry="3.0274899e-05"
        inkscape:label="HideTurnouts" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer11"
+     inkscape:label="Touch Zones">
+    <rect
+       style="fill:#ffff00;fill-opacity:0.50196078;stroke:none;stroke-opacity:1"
+       id="Touch"
+       width="90"
+       height="90"
+       x="380"
+       y="810"
+       ry="3.0274899e-05"
+       inkscape:label="Touch302" />
+    <rect
+       style="fill:#ffff00;fill-opacity:0.50196078;stroke:none;stroke-opacity:1"
+       id="Touch305"
+       width="90"
+       height="90"
+       x="580"
+       y="710"
+       ry="3.0274899e-05"
+       inkscape:label="Touch305" />
+    <rect
+       style="fill:#ffff00;fill-opacity:0.50196078;stroke:none;stroke-opacity:1"
+       id="Touch356"
+       width="90"
+       height="90"
+       x="1630"
+       y="810"
+       ry="3.0274899e-05"
+       inkscape:label="Touch356" />
+    <rect
+       style="fill:#ffff00;fill-opacity:0.50196078;stroke:none;stroke-opacity:1"
+       id="Touch351"
+       width="90"
+       height="90"
+       x="1530"
+       y="710"
+       ry="3.0274899e-05"
+       inkscape:label="Touch351" />
+    <rect
+       style="fill:#ffff00;fill-opacity:0.50196078;stroke:none;stroke-opacity:1"
+       id="Touch206"
+       width="90"
+       height="90"
+       x="530"
+       y="310"
+       ry="3.0274899e-05"
+       inkscape:label="Touch206" />
+    <rect
+       style="fill:#ffff00;fill-opacity:0.50196078;stroke:none;stroke-opacity:1"
+       id="Touch202"
+       width="90"
+       height="90"
+       x="430"
+       y="310"
+       ry="3.0274899e-05"
+       inkscape:label="Touch202" />
+    <rect
+       style="fill:#ffff00;fill-opacity:0.50196078;stroke:none;stroke-opacity:1"
+       id="Touch200"
+       width="90"
+       height="90"
+       x="280"
+       y="260"
+       ry="3.0274899e-05"
+       inkscape:label="Touch200" />
+    <rect
+       style="fill:#ffff00;fill-opacity:0.50196078;stroke:none;stroke-opacity:1"
+       id="Touch204"
+       width="90"
+       height="90"
+       x="480"
+       y="260"
+       ry="3.0274899e-05"
+       inkscape:label="Touch204" />
+    <rect
+       style="fill:#ffff00;fill-opacity:0.50196078;stroke:none;stroke-opacity:1"
+       id="Touch208"
+       width="90"
+       height="90"
+       x="580"
+       y="260"
+       ry="3.0274899e-05"
+       inkscape:label="Touch208" />
+    <rect
+       style="fill:#ffff00;fill-opacity:0.50196078;stroke:none;stroke-opacity:1"
+       id="Touch210"
+       width="90"
+       height="90"
+       x="680"
+       y="260"
+       ry="3.0274899e-05"
+       inkscape:label="Touch210" />
+    <rect
+       style="fill:#ffff00;fill-opacity:0.50196078;stroke:none;stroke-opacity:1"
+       id="Touch250"
+       width="90"
+       height="90"
+       x="1330"
+       y="260"
+       ry="3.0274899e-05"
+       inkscape:label="Touch250" />
+    <rect
+       style="fill:#ffff00;fill-opacity:0.50196078;stroke:none;stroke-opacity:1"
+       id="Touch254"
+       width="90"
+       height="90"
+       x="1530"
+       y="260"
+       ry="3.0274899e-05"
+       inkscape:label="Touch254" />
+    <rect
+       style="fill:#ffff00;fill-opacity:0.50196078;stroke:none;stroke-opacity:1"
+       id="Touch256"
+       width="90"
+       height="90"
+       x="1630"
+       y="260"
+       ry="3.0274899e-05"
+       inkscape:label="Touch256" />
+    <rect
+       style="fill:#ffff00;fill-opacity:0.50196078;stroke:none;stroke-opacity:1"
+       id="Touch354"
+       width="90"
+       height="90"
+       x="1580"
+       y="760"
+       ry="3.0274899e-05"
+       inkscape:label="Touch354" />
+    <rect
+       style="fill:#ffff00;fill-opacity:0.50196078;stroke:none;stroke-opacity:1"
+       id="Touch352"
+       width="90"
+       height="90"
+       x="1480"
+       y="760"
+       ry="3.0274899e-05"
+       inkscape:label="Touch352" />
+    <rect
+       style="fill:#ffff00;fill-opacity:0.50196078;stroke:none;stroke-opacity:1"
+       id="Touch304"
+       width="90"
+       height="90"
+       x="630"
+       y="760"
+       ry="3.0274899e-05"
+       inkscape:label="Touch304" />
+    <rect
+       style="fill:#ffff00;fill-opacity:0.50196078;stroke:none;stroke-opacity:1"
+       id="Touch302"
+       width="90"
+       height="90"
+       x="380"
+       y="760"
+       ry="3.0274899e-05"
+       inkscape:label="Touch302" />
+    <rect
+       style="fill:#ffff00;fill-opacity:0.50196078;stroke:none;stroke-opacity:1"
+       id="Touch209"
+       width="90"
+       height="90"
+       x="380"
+       y="210"
+       ry="3.0274899e-05"
+       inkscape:label="Touch209" />
+    <rect
+       style="fill:#ffff00;fill-opacity:0.50196078;stroke:none;stroke-opacity:1"
+       id="Touch260"
+       width="90"
+       height="90"
+       x="1420"
+       y="320"
+       ry="3.0274899e-05"
+       inkscape:label="Touch260" />
+    <rect
+       style="fill:#ffff00;fill-opacity:0.50196078;stroke:none;stroke-opacity:1"
+       id="Touch350"
+       width="90"
+       height="90"
+       x="1380"
+       y="810"
+       ry="3.0274899e-05"
+       inkscape:label="Touch350" />
+    <rect
+       style="fill:#ffff00;fill-opacity:0.50196078;stroke:none;stroke-opacity:1"
+       id="Touch321"
+       width="90"
+       height="90"
+       x="1080"
+       y="710"
+       ry="3.0274899e-05"
+       inkscape:label="Touch321" />
+    <rect
+       style="fill:#ffff00;fill-opacity:0.50196078;stroke:none;stroke-opacity:1"
+       id="Touch326"
+       width="90"
+       height="90"
+       x="730"
+       y="810"
+       ry="3.0274899e-05"
+       inkscape:label="Touch326" />
+    <rect
+       style="fill:#ffff00;fill-opacity:0.50196078;stroke:none;stroke-opacity:1"
+       id="Touch303"
+       width="90"
+       height="90"
+       x="480"
+       y="710"
+       ry="3.0274899e-05"
+       inkscape:label="Touch303" />
   </g>
 </svg>
