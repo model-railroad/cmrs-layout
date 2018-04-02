@@ -1,15 +1,25 @@
-# A blank Mongoose OS app
+# An ESP32 Mongoose OS app to toggle a JMRI Turnout
 
 ## Overview
 
-This is an empty app, serves as a skeleton for building Mongoose OS
-apps from scratch.
+An ESP32 Mongoose OS app to toggle a JMRI Turnout
 
 ## How to install this app
 
 - Install and start [mos tool](https://mongoose-os.com/software.html)
-- Switch to the Project page, find and import this app, build and flash it:
 
-<p align="center">
-  <img src="https://mongoose-os.com/images/app1.gif" width="75%">
-</p>
+Then:
+$ mos build
+$ mos flash
+$ mos wifi   # -- configure WIFI first time as client (aka "STAtion")
+$ mos put fs/init.js
+
+- Manually reset ESP32 using reset button.
+- Push PRG button to trigger turnout.
+
+Demo parameters:
+- JMRI server on 192.168.2.154:12080 (the web port).
+- JSON Server must be started on JMRI side.
+- Toggles turnout NT311.
+
+These demo parameters can be modified in fs/init.js

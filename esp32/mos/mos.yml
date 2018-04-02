@@ -14,7 +14,8 @@ filesystem:
   - fs
 
 libs:
-  - origin: https://github.com/mongoose-os-libs/js-demo-bundle
+  - origin: https://github.com/mongoose-os-libs/demo-bundle
+  - origin: https://github.com/mongoose-os-libs/mjs
   - origin: https://github.com/mongoose-os-libs/arduino-adafruit-ssd1306
 
 config_schema:
