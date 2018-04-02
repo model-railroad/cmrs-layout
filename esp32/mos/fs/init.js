@@ -23,23 +23,28 @@ print('LED GPIO:', led, 'button GPIO:', button);
 
 let displayCounter = 0;
 let displayIP = "";
+let displayState = "";
 function updateDisplay() {
-  oled.clearDisplay();
-  oled.setTextColor(Adafruit_SSD1306.WHITE);
-  // Note: display has one 5x8 font, and text size is a multiplier.
-  // set cursor x, y
-  oled.setTextSize(2);
-  oled.setCursor(0, 0);
-  oled.write("Turnout");
+    oled.clearDisplay();
+    oled.setTextColor(Adafruit_SSD1306.WHITE);
+    // Note: display has one 5x8 font, and text size is a multiplier.
+    // set cursor x, y
+    oled.setTextSize(2);
+    oled.setCursor(0, 0);
+    oled.write("Turnout311");
 
-  oled.setTextSize(1);
-  oled.setCursor(0, 16+4);
-  oled.write("Button " + JSON.stringify(displayCounter));
+    oled.setTextSize(1);
+    oled.setCursor(0, 16+4);
+    oled.write("Button " + JSON.stringify(displayCounter));
 
-  oled.setCursor(0, 16+4+8+4);
-  oled.write("IP " + displayIP);
+    oled.setCursor(0, 16+4+8+4);
+    oled.write("IP " + displayIP);
 
-  oled.display();
+    oled.setTextSize(2);
+    oled.setCursor(0, 16+4+8+4+8+4);
+    oled.write(displayState);
+
+    oled.display();
 }
 
 function updateIP() {
@@ -71,6 +76,7 @@ function toggleTurnout() {
     let post_data = { state: (turnoutState ? jmriClosed : jmriThrown) };
     print("jmriUrl:", jmriUrl);
     print("post_data:", JSON.stringify(post_data));
+    displayState = turnoutState ? "Closed" : "Thrown";
     
     HTTP.query({
         url: jmriUrl,
@@ -78,9 +84,12 @@ function toggleTurnout() {
         data: JSON.stringify(post_data),
         success: function(body, full_http_msg) { 
             print("JMRI Success:", JSON.stringify(body)); 
+            updateDisplay();
         },
         error: function(err) { 
             print("JMRI Error:", JSON.stringify(err)); 
+            displayState = "JMRI Error";
+            updateDisplay();
         },
     });
     
